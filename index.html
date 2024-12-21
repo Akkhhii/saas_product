@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex">
+
+    <div class="wrapper w-full h-screen absolute">
+        <div class="bg-[url(https://images.unsplash.com/photo-1687197180710-b2b9484a3c5f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center flex backdrop-blur-lg absolute inset-0 z-10 justify-center items-center ">
+            <nav class="bg-stone-500/50 w-full h-[5em] fixed top-0 flex items-center justify-between px-[2em] text-white">
+                <h2 id="logo" class="font-bold">CloudMon</h2>
+                <div class="links flex w-[30%] justify-between font-semibold invisible lg:visible">
+                    <p class="hover:relative transition-all duration-300 ease-out cursor-pointer hover:text-blue-400">Home</p>
+                    <p class="hover:relative transition-all duration-300 ease-out cursor-pointer hover:text-blue-400">About</p>
+                    <p class="hover:relative transition-all duration-300 ease-out cursor-pointer hover:text-blue-400">Products</p>
+                    <p class="hover:relative transition-all duration-300 ease-out cursor-pointer hover:text-blue-400">Services</p>
+                </div>
+                <button class="border-2 border-white font-semibold px-[2em] py-[0.5em] rounded-full bg-zinc-900/50 invisible md:visible hover:bg-white/50 hover:text-black transition-all duration-300 ease-out">Download</button>
+            </nav>
+            <div class="boxcontent bg-blu-500 w-[90%] absolute h-[88% top-[6em]">
+                <div class="textcontent bg-re-400 w-full h-[20%] flex flex-col justify-center items-center text-center gap-[1em] md:py-[2em] text-white">
+                    <h2 class="text-4xl font-bold lg:text-6xl">Choose your plan</h2>
+                    <p class="relative text-md lg:text-xl lg:font-normal">End enjoy using the fastest cloud services</p>
+                </div>
+                <div class="pricebox bg-orang-500 w-full relative flex flex-col items-center gap-[2em] py-[3em] md:flex-row md:flex-wrap md:justify-items-center md:items-center md:justify-center text-white">
+                    <div class="box1 bg-white/40 w-[60%] h-[20em] rounded-xl flex flex-col py-[1em] gap-[1em] md:w-[40%] md:h-[25em] md:relative md:gap-[2em] md:py-[2em] lg:w-[22%] lg:h-[35em] lg:gap-[6em] border-2 border-white hover:bg-zinc-700/50  transition-all duration-300 ease-out hover:lg:h-[36.5em]">
+                        <div class="top w-full h-[33%]-blue-400 flex flex-col px-[0.5em] md:gap-[1em]">
+                            <h2 class="my-auto font-semibold md:text-lg  lg:text-xl">Basic</h2>
+                            <p class="my-auto lg:pr-[1em]">For personal use and explanation of AI technology.</p>
+                        </div>
+                        <div class="middle w-full h-[33%] g-blue-400 flex flex-col lg:gap-[2em]">
+                            <h2 class="my-auto px-[0.5em] text-lg">$0</h2>
+                            <button class="my-auto mx-auto border-2 border-white w-[80%] rounded-full py-[0.3em] hover:bg-black/30 hover:text-white transition-all duration-300 ease-out">Get started</button>
+                        </div>
+                        <div class="bottom w-full h-[33%] g-blue-400 flex flex-col lg:gap-[0.5em]">
+                            <div class="c1 flex py-[0.3em] px-[0.5em] gap-[0.5em]">
+                                <input type="checkbox" checked>
+                                <p>100 requests per day</p>
+                            </div>
+                            <div class="c2 flex items-center py-[0.3em] px-[0.5em] gap-[0.5em]">
+                                <input type="checkbox" checked>
+                                <p>Free trial features access</p>
+                            </div>
+                            <div class="c3 flex items-center py-[0.3em] px-[0.5em] gap-[0.5em]">
+                                <input type="checkbox" checked>
+                                <p>Limited API access</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2 bg-white/40 w-[60%] h-[20em] rounded-xl py-[1em] flex flex-col gap-[1em] md:w-[40%] md:h-[25em] md:relative md:gap-[2em] md:py-[2em] lg:w-[22%] lg:h-[35em] lg:gap-[6em]  border-2 border-white hover:bg-zinc-700/50 transition-all duration-300 ease-out hover:lg:h-[36.5em]">
+                        <div class="top w-full h-[33%]-blue-400 flex flex-col px-[0.5em]  md:gap-[1em]">
+                            <h2 class="my-auto font-semibold md:text-lg  lg:text-xl">Premium</h2>
+                            <p class="my-auto ">Perfect for profesional in need od significant AI integration.</p>
+                        </div>
+                        <div class="middle w-full h-[33%] b-blue-400 flex flex-col lg:gap-[2em]">
+                            <h2 class="my-auto px-[0.5em] text-lg">$9.99</h2>
+                            <button class="my-auto mx-auto border-2 border-white w-[80%] rounded-full py-[0.3em] hover:bg-black/30 hover:text-white transition-all duration-300 ease-out">Get started</button>
+                        </div>
+                        <div class="bottom w-full h-[33%] b-blue-400 flex flex-col lg:gap-[0.5em]">
+                            <div class="c1 flex py-[0.3em] px-[0.5em] gap-[0.5em] ">
+                                <input type="checkbox" checked>
+                                <p>Unlimited AI generation</p>
+                            </div>
+                            <div class="c2 flex items-center py-[0.3em] px-[0.5em] gap-[0.5em]">
+                                <input type="checkbox" checked>
+                                <p>Full new features access</p>
+                            </div>
+                            <div class="c3 flex items-center py-[0.3em] px-[0.5em] gap-[0.5em]">
+                                <input type="checkbox" checked>
+                                <p>Proxy support</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box3 bg-white/40 w-[60%] h-[20em] rounded-xl py-[1em] flex flex-col gap-[1em] md:w-[40%] md:h-[25em] md:relative md:gap-[2em] md:py-[2em] lg:w-[22%] lg:h-[35em] lg:gap-[6em] border-2 border-white hover:bg-zinc-700/50 transition-all duration-300 ease-out hover:lg:h-[36.5em]">
+                        <div class="top w-full h-[33%]-blue-400 flex flex-col px-[0.5em] md:gap-[1em] ">
+                            <h2 class="my-auto font-semibold md:text-lg  lg:text-xl">Enterprise</h2>
+                            <p class="my-auto">Perfect for large business or organizations that require specialized support.</p>
+                        </div>
+                        <div class="middle w-full h-[33%] -blue-400 flex flex-col lg:gap-[2em]">
+                            <h2 class="my-auto px-[0.5em] text-lg"></h2>
+                            <button class="my-auto mx-auto border-2 border-white w-[80%] rounded-full py-[0.3em] hover:bg-black/30 hover:text-white transition-all duration-300 ease-out">Contact sale</button>
+                        </div>
+                        <div class="bottom w-full h-[33%] -blue-400 flex flex-col lg:gap-[0.5em] ">
+                            <div class="c1 flex py-[0.3em] px-[0.5em] gap-[0.5em]">
+                                <input type="checkbox" checked>
+                                <p>Custom deployment</p>
+                            </div>
+                            <div class="c2 flex items-center py-[0.3em] px-[0.5em] gap-[0.5em]">
+                                <input type="checkbox" checked>
+                                <p>Comprehensive usage data</p>
+                            </div>
+                            <div class="c3 flex items-center py-[0.3em] px-[0.5em] gap-[0.5em]">
+                                <input type="checkbox" checked>
+                                <p>Training specialized models</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+</body>
+</html>
